@@ -4,150 +4,292 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Condrea Loredana - CV</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-
-<header>
-    <h1>Condrea Loredana</h1>
-
-    <p>Chișinău, Moldova</p>
-    <p>Date of birth: 30/11/2004</p>
-    <p>Phone: (+373) 60250970 (Mobile)</p>
-
-    <p>
-        Email:
-        <a href="mailto:loredana.condrea@isa.utm.md">condrea.loredana@isa.utm.md</a>
-    </p>
-
-    <p>
-        GitHub:
-        <a href="https://github.com/loredanaahsl/tum-web-lab1" target="_blank" rel="noopener">
-            loredanaahsl/tum-web-lab1
-        </a>
-    </p>
-</header>
-
 <main>
-    <section>
-        <h2>About Me</h2>
 
-        <img src="profile.png" alt="Profile photo" width="120" height="120" />
+    <!-- Header / Basic Info -->
+    <section class="card pad-lg">
+        <header class="header">
+            <h1 class="name">Condrea Loredana</h1>
 
-        <p>
-            <strong>Software Engineering student</strong> focused on building clean web applications and well-structured systems.
-        </p>
+            <div class="meta">
+                <span>Chișinău, Moldova</span>
+                <span>Date of birth: 30/11/2004</span>
+                <span>Phone: (+373) 60250970 (Mobile)</span>
 
-        <p>
-            I enjoy drawing and expressing ideas visually, which naturally influences the way I design and build user interfaces.
-            I aspire to become a specialized front-end developer, focused on creating intuitive, accessible, and visually refined
-            web experiences. Beyond technology, I find balance and inspiration in creative pursuits such as playing the piano and
-            experimenting with baking—especially crafting desserts that combine precision with imagination.
-        </p>
-    </section>
-    <section>
-        <h2>Education</h2>
+                <span>
+                    Email:
+                    <a href="mailto:loredana.condrea@isa.utm.md">condrea.loredana@isa.utm.md</a>
+                </span>
 
-        <article>
-            <h3>Cisco Networking Academy – IT Essentials</h3>
-            <p><strong>Field:</strong> Information and Communication Technologies</p>
-            <p><strong>Period:</strong> 23/06/2022 – 23/11/2022</p>
-            <p>
-                <strong>Pleasant memory:</strong>
-                Network troubleshooting Packet Tracer labs were fascinating — learning how data flows through networks opened my eyes to infrastructure complexity.
-            </p>
-            <p>
-                Website:
-                <a href="https://www.netacad.com" target="_blank" rel="noopener">netacad.com</a>
-            </p>
-        </article>
-
-        <article>
-            <h3>Technical University of Moldova</h3>
-            <p><strong>Programme:</strong> Bachelor of Science, English Taught Honours Programme in Software Engineering</p>
-            <p><strong>Period:</strong> 01/09/2023 – Current</p>
-            <p>
-                <strong>Pleasant memory:</strong>
-                Working on team projects and presenting results in front of classmates helped me become more confident and more structured in how I communicate technical work.
-            </p>
-            <p>
-                Website:
-                <a href="https://utm.md/en/" target="_blank" rel="noopener">utm.md</a>
-            </p>
-        </article>
-
-        <article>
-            <h3>Public Institution Theoretic Lyceum “Ion Creangă”</h3>
-            <p><strong>Diploma:</strong> Baccalaureate</p>
-            <p><strong>Period:</strong> 01/09/2011 – 01/07/2023</p>
-            <p>
-                <strong>Pleasant memory:</strong>
-                A pleasant school memory for me is the sense of belonging that came from collaborative moments—group projects, shared deadlines, and late discussions that turned classmates into teammates.
-            </p>
-            <p>
-                Website:
-                <a href="https://creanga.md/" target="_blank" rel="noopener">creanga.md</a>
-            </p>
-        </article>
+                <span>
+                    GitHub:
+                    <a href="https://github.com/loredanaahsl/tum-web-lab1" target="_blank" rel="noopener">
+                        loredanaahsl/tum-web-lab1
+                    </a>
+                </span>
+            </div>
+        </header>
     </section>
 
+    <!-- About Me -->
     <section>
-        <h2>Projects</h2>
+        <div class="section-title"><h2>About Me</h2></div>
 
-        <article>
-            <h3>Electroteca</h3>
-            <p>Web platform for borrowing and exchanging electronic and mechatronics equipment.</p>
+        <div class="card pad-md about">
+            <div class="about-wrap">
+                <img src="profile.png" alt="Profile photo" class="about-avatar" />
 
-            <p>
-                <strong>Repository:</strong>
-                <a href="https://github.com/georgerabus/electroteca" target="_blank" rel="noopener">
-                    github.com/georgerabus/electroteca
-                </a>
-            </p>
+                <div>
+                    <p><strong>Software Engineering student</strong> focused on building clean web applications and well-structured systems.</p>
+                    <p>
+                        I enjoy drawing and expressing ideas visually, which naturally influences the way I design and build user interfaces.
+                        I aspire to become a specialized front-end developer, focused on creating intuitive, accessible, and visually refined
+                        web experiences. Beyond technology, I find balance and inspiration in creative pursuits such as playing the piano and
+                        experimenting with baking—especially crafting desserts that combine precision with imagination.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p><strong>Technologies:</strong> PHP, React, TypeScript, HTML, CSS</p>
+    <!-- Education -->
+    <section>
+        <div class="section-title"><h2>Education</h2></div>
+
+        <article class="edu-card">
+            <div class="edu-top">
+                <div>
+                    <h3 class="edu-title">Cisco Networking Academy – IT Essentials</h3>
+                    <div class="edu-sub">Information and Communication Technologies</div>
+                </div>
+                <div class="edu-period">23/06/2022 – 23/11/2022</div>
+            </div>
+
+            <div class="edu-meta">
+                <div class="kv"><span class="k">City:</span><span class="v">Chișinău</span></div>
+                <div class="kv"><span class="k">Country:</span><span class="v">Moldova</span></div>
+                <div class="kv"><span class="k">Website:</span><span class="v"><a href="https://www.netacad.com" target="_blank" rel="noopener">netacad.com</a></span></div>
+
+                <div class="kv"><span class="k">Field:</span><span class="v">Information and Communication Technologies</span></div>
+                <div class="kv"><span class="k">Final grade:</span><span class="v">12</span></div>
+                <div class="kv"><span class="k">Type:</span><span class="v">Professional training</span></div>
+            </div>
+
+            <div class="memory">
+                <div class="label">Pleasant memory</div>
+                <div class="text">
+                    Network troubleshooting Packet Tracer labs were fascinating — learning how data flows through networks opened my eyes to infrastructure complexity.
+                </div>
+            </div>
         </article>
 
-        <article>
-            <h3>F.A.C.E.S</h3>
-            <p>System design, UML modeling, documentation, and UI concepts for a client engagement solution.</p>
+        <div class="space-24"></div>
 
-            <p>
-                <strong>Repository:</strong>
-                <a href="https://github.com/M1XaM/FACES" target="_blank" rel="noopener">
-                    github.com/M1XaM/FACES
-                </a>
-            </p>
+        <article class="edu-card">
+            <div class="edu-top">
+                <div>
+                    <h3 class="edu-title">Bachelor of Science, English Taught Honours Programme in Software Engineering</h3>
+                    <div class="edu-sub">Technical University of Moldova, Faculty of Computers, Informatics and Microelectronics</div>
+                </div>
+                <div class="edu-period">01/09/2023 – Current</div>
+            </div>
 
-            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, C#, Docker</p>
+            <div class="edu-meta">
+                <div class="kv"><span class="k">City:</span><span class="v">Chișinău</span></div>
+                <div class="kv"><span class="k">Country:</span><span class="v">Moldova</span></div>
+                <div class="kv"><span class="k">Website:</span><span class="v"><a href="https://utm.md/en/" target="_blank" rel="noopener">utm.md</a></span></div>
+
+                <div class="kv"><span class="k">Field:</span><span class="v">Software Engineering</span></div>
+                <div class="kv"><span class="k">Programme:</span><span class="v">English taught honours</span></div>
+                <div class="kv"><span class="k">Status:</span><span class="v">In progress</span></div>
+            </div>
+
+            <div class="memory">
+                <div class="label">Pleasant memory</div>
+                <div class="text">
+                    Working on team projects and presenting results in front of classmates helped me become more confident and more structured in how I communicate technical work.
+                </div>
+            </div>
         </article>
 
-        <article>
-            <h3>Project Trophee (PBL)</h3>
-            <p>Mobile app concept focused on nutrition and healthier habits (requirements and UX planning).</p>
+        <div class="space-24"></div>
 
-            <p><strong>Technologies:</strong> HTML, CSS, Docker, TypeScript, Rust</p>
+        <article class="edu-card">
+            <div class="edu-top">
+                <div>
+                    <h3 class="edu-title">Baccalaureate diploma</h3>
+                    <div class="edu-sub">Public Institution Theoretic Lyceum “Ion Creangă”</div>
+                </div>
+                <div class="edu-period">01/09/2011 – 01/07/2023</div>
+            </div>
+
+            <div class="edu-meta">
+                <div class="kv"><span class="k">City:</span><span class="v">Chișinău</span></div>
+                <div class="kv"><span class="k">Country:</span><span class="v">Moldova</span></div>
+                <div class="kv"><span class="k">Website:</span><span class="v"><a href="https://creanga.md/" target="_blank" rel="noopener">creanga.md</a></span></div>
+
+                <div class="kv"><span class="k">Field of study:</span><span class="v">Real Profile</span></div>
+                <div class="kv"><span class="k">Focus:</span><span class="v">Mathematics and sciences</span></div>
+                <div class="kv"><span class="k">Type:</span><span class="v">Secondary education</span></div>
+            </div>
+
+            <div class="memory">
+                <div class="label">Pleasant memory</div>
+                <div class="text">
+                    A pleasant school memory for me is the sense of belonging that came from collaborative moments—group projects, shared deadlines, and late discussions that turned classmates into teammates.
+                </div>
+            </div>
         </article>
     </section>
-    <section>
-        <h2>Volunteering</h2>
 
-        <article>
-            <h3>Interact Chișinău</h3>
-            <p><strong>Period:</strong> 2021 – 2022</p>
-            <p>
+    <!-- Projects -->
+    <section>
+        <div class="section-title"><h2>Projects</h2></div>
+
+        <div class="projects-wrap">
+
+            <article class="project-card">
+                <div class="project-head">
+                    <div>
+                        <h3 class="project-title">Electroteca</h3>
+                        <div class="project-sub">Web platform for borrowing and exchanging electronic and mechatronics equipment</div>
+                    </div>
+                </div>
+
+                <p class="project-desc">
+                    Built as a team project to support structured equipment lending inside academic communities. Focused on clarity, usability, and consistent workflows for listing items, requesting, and tracking borrow status.
+                </p>
+
+                <div class="project-row">
+                    <div class="row-label">Link</div>
+                    <a class="btn" href="https://github.com/georgerabus/electroteca" target="_blank" rel="noopener">GitHub Repository</a>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Tech Stack</div>
+                    <div class="stack">
+                        <span class="pill">PHP</span>
+                        <span class="pill">React</span>
+                        <span class="pill">TypeScript</span>
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Key Skills</div>
+                    <ul class="skills">
+                        <li>Implemented clear lending workflows and status-driven item tracking.</li>
+                        <li>Contributed to UI structure and consistency across pages and user flows.</li>
+                        <li>Collaborated in a shared repository with coordinated tasks and deliverables.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
+                    <div>
+                        <h3 class="project-title">F.A.C.E.S</h3>
+                        <div class="project-sub">System design, UML modeling, documentation, and UI concepts</div>
+                    </div>
+                </div>
+
+                <p class="project-desc">
+                    Focused on system modeling and structured documentation for a fully automated client engagement solution. Emphasized clarity in diagrams, deliverable structure, and teamwork.
+                </p>
+
+                <div class="project-row">
+                    <div class="row-label">Link</div>
+                    <a class="btn" href="https://github.com/M1XaM/FACES" target="_blank" rel="noopener">GitHub Repository</a>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Tech Stack</div>
+                    <div class="stack">
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">JavaScript</span>
+                        <span class="pill">C#</span>
+                        <span class="pill">Docker</span>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Key Skills</div>
+                    <ul class="skills">
+                        <li>Expertise in UML diagramming, Figma design, and producing detailed technical documentation that supports project clarity and technical accuracy.</li>
+                        <li>Strengthened abilities in team collaboration, attention to detail, and effective communication by coordinating closely with the team and ensuring everyone was on the same page throughout the project lifecycle.</li>
+                        <li>The project’s documentation served as a vital reference that guided both technical and non-technical team members, improving user experience through clear design documentation and streamlining project workflows through well-organized, easily accessible records.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-head">
+                    <div>
+                        <h3 class="project-title">Project Trophee (PBL)</h3>
+                        <div class="project-sub">Mobile app concept focused on nutrition and healthier habits</div>
+                    </div>
+                </div>
+
+                <p class="project-desc">
+                    Designed a product concept with user-centric flows and a clear value proposition. Focused on requirements, feature planning, and presenting a coherent UX direction.
+                </p>
+
+                <div class="subsection">
+                    <div class="subsection-title">Tech Stack</div>
+                    <div class="stack">
+                        <span class="pill">HTML</span>
+                        <span class="pill">CSS</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Typescript</span>
+                        <span class="pill">Rust</span>
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <div class="subsection-title">Key Skills</div>
+                    <ul class="skills">
+                        <li>Requirements analysis and user-centered feature planning.</li>
+                        <li>Structured ideation and coordination inside a project-based learning team.</li>
+                        <li>Clear communication of app flows and interaction goals.</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Volunteering -->
+    <section>
+        <div class="section-title"><h2>Volunteering</h2></div>
+
+        <div class="vol-card">
+            <h3 class="vol-title">Interact Chișinău</h3>
+            <div class="vol-meta">2021 – 2022</div>
+            <p class="vol-desc">
                 Youth NGO focused on leadership development through civic initiatives, inclusion, and community engagement.
             </p>
-        </article>
+        </div>
     </section>
 
+    <div class="space-44"></div>
+
+    <footer>
+        <div>Condrea Loredana · 2026</div>
+        <div class="footer-line">
+            Web Programming Lab · Technical University of Moldova
+        </div>
+    </footer>
 
 </main>
-
-<footer>
-    <p>Condrea Loredana · 2026</p>
-    <p>Web Programming Lab · Technical University of Moldova</p>
-</footer>
-
 </body>
 </html>
